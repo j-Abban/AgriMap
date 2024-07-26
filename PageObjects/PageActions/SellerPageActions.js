@@ -46,11 +46,11 @@ fillConfirmPassword = (confirmPassword) => {
 }
 
 checkCheckbox = () => {
-    cy.get('.ng-dirty.ng-touched.ng-valid').check();
+    cy.get('input[formcontrolname="terms"]').check();
 }
 
 clickRegisterButton = () => {
-    cy.get('.flex > :nth-child(2) > .w-full').should('not.bevisible').click({force: true}).should('be.checked');
+    cy.get('.flex > :nth-child(2) > .w-full').click();
 }
 }
 
