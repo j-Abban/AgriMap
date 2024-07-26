@@ -9,10 +9,9 @@ This repository contains automated tests for the Agricultural Marketplace Platfo
 - [Running Tests](#running-tests)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
-Automated tests in this repository cover critical functionalities of AMP, such as user registration, product management, and transactions, ensuring the platform's reliability and performance.
+Automated tests in this repository cover critical functionalities of AMP, such as user registration, login, User profile, product management, and transactions, ensuring the platform's reliability and performance.
 
 ## Technologies Used
 - **Testing Framework:** Cypress

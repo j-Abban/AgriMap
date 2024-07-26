@@ -10,6 +10,13 @@ const signup = new Signup();
             signup.fillFirstName('Akomeah');
             signup.fillLastName('Ansah');
             signup.clickNextButton();
-            signup.fillEmail();
+            signup.fillEmail('kwameabban@gmail.com');
+            signup.fillPhone('+233550877703');
+            signup.fillLocation('Kumasi');
+            signup.clickButton();
+            signup.fillCreatePassword('Sell3r123@');
+            signup.fillConfirmPassword('Sell3r123@');
+            signup.checkCheckbox();
+            signup.clickRegisterButton();
         })
     })
