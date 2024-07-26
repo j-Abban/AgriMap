@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 //Seller Account Registration
-import RegistrationPage from "../../PageObjects/PageActions/SellerPageActions";
+import RegistrationPage from "../../PageObjects/PageActions/SellerPageActions"
 
-describe('Registration Page', () => {
+describe('Seller Registration Page', () => {
 
 const registrationPage = new RegistrationPage();
 
@@ -21,5 +21,4 @@ const registrationPage = new RegistrationPage();
      registrationPage.checkCheckbox();
      registrationPage.clickRegisterButton();
     })
-   
 })
