@@ -6,9 +6,7 @@ class Update{
     };
 
     clickOnEdit = () => {
-cy.get('.left-content > [tabindex="1"]').click();
-
-
+    cy.get('.left-content > [tabindex="1"]').click();
     };
 
     inputFirstName = (firstName) => {
