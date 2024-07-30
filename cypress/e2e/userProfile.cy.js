@@ -1,18 +1,33 @@
 /// <reference types="cypress"/>
-//User Profile
+import Login from "../../PageObjects/PageActions/LoginPageActions";
+import Update from "../../PageObjects/PageActions/UserProfile";
 
-import Update from "../../PageObjects/PageActions/UserProfile"
+describe('Full User Flow Test', () => {
+  const login = new Login();
+  const update = new Update();
 
-describe('User Profile Page', () => {
-const update = new Update;
+  before(() => {
+    // This will run once before all tests in this block
+    login.visit();
+    login.userEmail('jilabov846@calunia.com');
+    login.userPassword('Sell3r.123@');
+    login.clickLoginButton();
+  });
 
-it('should view and edit use details', () => {
- update.visit();
- update.clickOnEdit();
- update.inputFirstName();
- update.inputLastName();
- update.inputPhone();
- update.inputOrganizationName();
- update.clickSaveChanges();
-})
-})
+  describe('User Profile Page', () => {
+    //beforeEach(() => {
+    //  update.visit();
+    //});
+
+    it('should view and edit user details', () => {
+      update.clickUserProfile();
+      update.clickOnEdit();
+      update.inputFirstName('Hilary'); 
+      update.inputLastName('Ackah'); 
+      update.inputPhone('+233557298173'); 
+      update.inputOrganizationName('Darko Farms');
+      update.clickSaveChanges();
+      update.successfulUpdate('Profile Updated Successfully')
+    });
+  });
+});
