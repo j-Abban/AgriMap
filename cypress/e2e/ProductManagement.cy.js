@@ -22,9 +22,15 @@ describe('Full User Flow Test', () => {
     it('should view and edit user details', () => {
      //product.clickOnManageProducts();
      //product.clickAddProduct();
+     const imagePath = 'Guava.jpg';
      cy.get(':nth-child(9) > .ng-star-inserted > .nav-item > p').click();
      cy.get("[class='flex w-full items-center justify-between px-4 my-4'] [tabindex]").click();
-     
+     cy.get('.form-group > .w-full').type('Maize');
+     cy.get('.mt-4 > .w-full')
+     .type('Maize, also known as corn in North American English, is a tall stout grass that produces cereal grain.');
+    // cy.get('label[for="file"]').attachFile(imagePath);
+    cy.get('label[for="file"]').click();
+
     });
   });
 });
