@@ -9,8 +9,8 @@ describe('Full User Flow Test', () => {
   before(() => {
     // This will run once before all tests in this block
     login.visit();
-    login.userEmail('jilabov846@calunia.com');
-    login.userPassword('Sell3r.123@');
+    login.userEmail('xegopi2177@daypey.com');
+    login.userPassword('Kw@m3.Jak1');
     login.clickLoginButton();
   });
 
@@ -22,6 +22,7 @@ describe('Full User Flow Test', () => {
     it('should view and edit user details', () => {
       update.clickUserProfile();
       update.clickOnEdit();
+      update.clickOnEdit1();
       update.inputFirstName('Hilary'); 
       update.inputLastName('Ackah'); 
       update.inputPhone('+233557298173'); 

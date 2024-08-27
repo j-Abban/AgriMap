@@ -2,12 +2,16 @@
 
 class Update{
     clickUserProfile = ()  => {
-        cy.get(":nth-child(2) > .ng-star-inserted > .nav-item").click();
+        cy.get(".name").click();
     };
 
     clickOnEdit = () => {
-    cy.get('.left-content > [tabindex="1"]').click();
+    cy.get('.navbar-menu > :nth-child(1)').click();
     };
+
+    clickOnEdit1 = () => {
+        cy.get('.left-content > [tabindex="1"]').click();
+        };
 
     inputFirstName = (firstName) => {
         cy.get(':nth-child(1) > .form-group > .w-full').clear().type(firstName);

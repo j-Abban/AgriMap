@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7264","should view and edit user details","","Tue Aug 27 17:46:45 UTC 2024","passed","Tue Aug 27 17:46:52 UTC 2024","","Full User Flow Test User Profile Page","Full User Flow Test User Profile Page","should view and edit user details"
+"","4031","should register a new user","","Tue Aug 27 17:46:32 UTC 2024","passed","Tue Aug 27 17:46:36 UTC 2024","","Seller Registration Page","Seller Registration Page","should register a new user"
+"","5006","should register a new user","","Tue Aug 27 17:45:16 UTC 2024","passed","Tue Aug 27 17:45:21 UTC 2024","","Buyer Registration Page","Buyer Registration Page","should register a new user"
+"","2000","should Login to the Dashboard","","Tue Aug 27 17:46:38 UTC 2024","passed","Tue Aug 27 17:46:40 UTC 2024","","Login Page Test","Login Page Test","should Login to the Dashboard"
