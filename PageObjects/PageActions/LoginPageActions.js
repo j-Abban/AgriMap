@@ -14,6 +14,14 @@ class  Login{
  }
  clickLoginButton = () => {
     cy.get("button[type='submit']").click();
+    cy.wait(3000);
  }
+
+ verifyLoginSuccess = () => {
+   cy.get('div.toast-message.ms-3.text-sm.font-normal.text-green-500')
+   .invoke('text')
+   .then((text)=>{expect(text.trim()).to.equal('Log-in successful')});
+ }
+ 
 }
 export default Login;

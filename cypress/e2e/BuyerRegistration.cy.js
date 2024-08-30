@@ -6,17 +6,19 @@ describe('Buyer Registration Page', () => {
 const signup = new Signup();
 
         it('should register a new user', () => {
+            cy.fixture('credentials').then((creds) => {
             signup.visit();
-            signup.fillFirstName('Akomeah');
-            signup.fillLastName('Ansah');
+            signup.fillFirstName(creds.buyerFirstName);
+            signup.fillLastName(creds.buyerLastName);
             signup.clickNextButton();
-            signup.fillEmail('kwameabban@gmail.com');
-            signup.fillPhone('+233550877703');
-            signup.fillLocation('Kumasi');
+            signup.fillEmail(creds.buyerEmail);
+            signup.fillPhone(creds.phone);
+            signup.fillLocation(creds.location);
             signup.clickButton();
-            signup.fillCreatePassword('Sell3r123@');
-            signup.fillConfirmPassword('Sell3r123@');
+            signup.fillCreatePassword(creds.createPassword);
+            signup.fillConfirmPassword(creds.confirmPassword);
             signup.checkCheckbox();
             signup.clickRegisterButton();
-        })
-    })
+        });
+    });
+    });

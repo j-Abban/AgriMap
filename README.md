@@ -25,7 +25,11 @@ Automated tests in this repository cover critical functionalities of AMP, such a
 
 2. Navigate to the project directory and install dependencies:
  cd AgriMap-automation
- npm install
+ run npm init
+ run npm install cypress --save-dev
+ run npm cypresss open
+ Select e2e and choose your prefered browser
+ 
 
  ## Running Tests
  To execute the automated tests, use the following command:
