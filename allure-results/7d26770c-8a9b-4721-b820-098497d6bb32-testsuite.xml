@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724780716769' stop='1724780721775'>
+    <name>Buyer Registration Page</name>
+    <title>Buyer Registration Page</title>
+    <test-cases>
+        <test-case start='1724780716769' status='passed' stop='1724780721775'>
+            <name>should register a new user</name>
+            <title>should register a new user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

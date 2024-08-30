@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724780805112' stop='1724780812381'>
+    <name>Full User Flow Test User Profile Page</name>
+    <title>Full User Flow Test User Profile Page</title>
+    <test-cases>
+        <test-case start='1724780805117' status='passed' stop='1724780812381'>
+            <name>should view and edit user details</name>
+            <title>should view and edit user details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

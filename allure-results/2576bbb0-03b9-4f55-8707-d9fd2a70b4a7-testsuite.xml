@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1724780786582' stop='1724780791049'>
+    <name>Full User Flow Test User Profile Page</name>
+    <title>Full User Flow Test User Profile Page</title>
+    <test-cases>
+        <test-case start='1724780786586' status='failed' stop='1724780791008'>
+            <name>should view and edit user details</name>
+            <title>should view and edit user details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `:nth-child(9) > .ng-star-inserted > .nav-item > p`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(9) > .ng-star-inserted > .nav-item > p`, but never found it.
+                    at Context.eval (webpack://agrimap/./cypress/e2e/ProductManagement.cy.js:26:8)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
